@@ -1,10 +1,10 @@
 #!/bin/bash
 
+# Upgrade system
+sudo apt update && sudo apt upgrade -y
+
 # Remove preinstalled version of Firefox
 sudo snap remove firefox
-
-# Update apt package index
-sudo apt update
 
 # Install Flatpak and Flathub repository
 sudo apt install flatpak -y
