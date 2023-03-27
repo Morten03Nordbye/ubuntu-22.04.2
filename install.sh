@@ -20,10 +20,21 @@ flatpak install flathub org.remmina.Remmina -y
 flatpak install flathub com.visualstudio.code -y
 
 # Install other packages using apt
-sudo apt install flameshot libreoffice vim terminator nitrogen rofi i3 arandr -y
+sudo apt install flameshot libreoffice vim nitrogen rofi i3 arandr terminator -y
 
 # Install Polybar (commented out)
 #sudo apt install build-essential cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python3-sphinx libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev -y
 #git clone https://github.com/polybar/polybar.git
 #cd polybar && ./build.sh
 #cd .. && rm -rf polybar
+
+# Install Papirus icon theme
+sudo add-apt-repository ppa:papirus/papirus -y
+sudo apt update
+sudo apt install papirus-icon-theme -y
+
+# Set Papirus as the default icon theme
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
+
+# Set Terminator as the default terminal emulator
+sudo update-alternatives --config x-terminal-emulator
