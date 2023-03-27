@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove preinstalled version of Firefox
-sudo apt remove firefox -y
+sudo snap remove firefox
 
 # Update apt package index
 sudo apt update
