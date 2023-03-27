@@ -22,8 +22,8 @@ flatpak install flathub com.visualstudio.code -y
 # Install other packages using apt
 sudo apt install flameshot libreoffice vim terminator nitrogen rofi i3 arandr -y
 
-# Install Polybar
-sudo apt install build-essential cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python3-sphinx libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev -y
-git clone https://github.com/polybar/polybar.git
-cd polybar && ./build.sh
-cd .. && rm -rf polybar
+# Install Polybar (commented out)
+#sudo apt install build-essential cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python3-sphinx libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev -y
+#git clone https://github.com/polybar/polybar.git
+#cd polybar && ./build.sh
+#cd .. && rm -rf polybar
