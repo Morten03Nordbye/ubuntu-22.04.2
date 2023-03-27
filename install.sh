@@ -20,7 +20,7 @@ flatpak install flathub org.remmina.Remmina -y
 flatpak install flathub com.visualstudio.code -y
 
 # Install other packages using apt
-sudo apt install flameshot libreoffice vim nitrogen rofi i3 arandr terminator python3-pip -y
+sudo apt install flameshot libreoffice vim nitrogen rofi i3 arandr terminator python3-pip network-manager-openconnect-gnome -y
 # Install modules needed for OS-Script
 pip3 install beautifulsoup4 lxml
 
