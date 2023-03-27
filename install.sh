@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Remove preinstalled version of Firefox
+sudo apt remove firefox -y
+
+# Update apt package index
+sudo apt update
+
 # Install Flatpak and Flathub repository
 sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
