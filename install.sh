@@ -17,7 +17,6 @@ flatpak install flathub org.chromium.Chromium -y
 flatpak install flathub com.slack.Slack -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub org.remmina.Remmina -y
-flatpak install flathub com.visualstudio.code -y
 
 # Install other packages using apt
 sudo apt install flameshot libreoffice vim nitrogen rofi i3 arandr terminator python3-pip network-manager-openconnect-gnome -y
